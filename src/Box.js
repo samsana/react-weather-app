@@ -1,5 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
+import Table from "./Table";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Box.css";
@@ -7,9 +8,9 @@ import "./Box.css";
 export default function Box() {
   return (
     <div className="Box">
+      <Table />
       <div className="form-group">
         <form>
-          <label for="exampleInputEmail1">React App</label>
           <div className="row">
             <div className="col-9">
               <input
@@ -17,16 +18,28 @@ export default function Box() {
                 className="form-control"
                 placeholder="Where to, Miss?"
               />
+              <label>
+                ...To the{" "}
+                <span role="img" aria-label="react">
+                  🌟🌟🌟
+                </span>
+              </label>
             </div>
             <div className="col">
               <button type="submit" className="btn btn-primary">
-                Submit
+                Search
               </button>
             </div>
           </div>
         </form>
       </div>{" "}
       <Weather />
+      <footer>
+        React App{" "}
+        <span role="img" aria-label="react">
+          ⚛️
+        </span>
+      </footer>
     </div>
   );
 }

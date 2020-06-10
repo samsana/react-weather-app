@@ -9,7 +9,7 @@ export default function Weather() {
       <div className="col-10">
         <h3>Frankfurt am Main, DE</h3>
       </div>
-      <div className="col-4">
+      <div className="col-3">
         <h1>
           19{" "}
           <span className="units">
