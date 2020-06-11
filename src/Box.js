@@ -9,29 +9,27 @@ export default function Box() {
   return (
     <div className="Box">
       <Table />
-      <div className="form-group">
-        <form>
-          <div className="row">
-            <div className="col-9">
-              <input
-                type="search"
-                className="form-control"
-                placeholder="Where to, Miss?"
-              />
-              <label>
-                ...To the{" "}
-                <span role="img" aria-label="react">
-                  🌟🌟🌟
-                </span>
-              </label>
-            </div>
-            <div className="col">
-              <button type="submit" className="btn btn-primary">
-                Search
-              </button>
-            </div>
-          </div>
-        </form>
+      <div class="input-group mb-3">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Where to, Miss?"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            ...To the{" "}
+            <span role="img" aria-label="react">
+              🌟🌟🌟
+            </span>
+          </button>
+        </div>
       </div>{" "}
       <Weather />
       <footer>
