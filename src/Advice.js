@@ -11,13 +11,13 @@ export default function Advice() {
         <p className="Advice">
           <Emoji icon="👠" /> ‣ high heels
         </p>
-        <h5>To be:</h5>
-        <p className="Advice">
-          <Emoji icon="🧘‍♀️" /> ‣ as cool as cucumber
-        </p>
         <h5>To do:</h5>
         <p className="Advice">
           <Emoji icon="👻" /> ‣ chat with your BF
+        </p>
+        <h5>To be:</h5>
+        <p className="Advice">
+          <Emoji icon="🧘‍♀️" /> ‣ as cool as cucumber
         </p>
       </div>
     </article>

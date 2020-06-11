@@ -1,3 +1,14 @@
 h1 {
   text-align: center;
 }
+
+footer {
+  text-align: left;
+  font-size: 12px;
+}
+
+div.App {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}

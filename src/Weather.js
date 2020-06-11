@@ -32,6 +32,12 @@ export default function Weather(props) {
               </ul>
             </div>
           </div>
+          <h3 className="Location">
+            <Emoji icon="📍" />
+            <a href="/">
+              <span className="LocationLabel">:check location</span>
+            </a>
+          </h3>
         </div>
         <Advice />
       </div>

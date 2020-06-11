@@ -1,6 +1,7 @@
 import React from "react";
 import Weather from "./Weather";
 import Table from "./Table";
+import Forecast from "./Forecast";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Box.css";
@@ -29,9 +30,7 @@ export default function Box() {
         </div>
       </div>{" "}
       <Weather />
-      <footer>
-        React App <Emoji icon="⚛️" />
-      </footer>
+      <Forecast />
     </div>
   );
 }
