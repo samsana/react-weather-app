@@ -4,6 +4,7 @@ import Table from "./Table";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Box.css";
+import Emoji from "./Emoji";
 
 export default function Box() {
   return (
@@ -24,19 +25,13 @@ export default function Box() {
             type="button"
             id="button-addon2"
           >
-            ...To the{" "}
-            <span role="img" aria-label="react">
-              🌟🌟🌟
-            </span>
+            ...To the <Emoji icon="🌟🌟🌟" />
           </button>
         </div>
       </div>{" "}
       <Weather />
       <footer>
-        React App{" "}
-        <span role="img" aria-label="react">
-          ⚛️
-        </span>
+        React App <Emoji icon="⚛️" />
       </footer>
     </div>
   );
