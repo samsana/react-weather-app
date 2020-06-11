@@ -18,7 +18,6 @@ export default function Box() {
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
-
         <div class="input-group-append">
           <button
             class="btn btn-outline-secondary"
