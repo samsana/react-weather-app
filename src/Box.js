@@ -11,7 +11,7 @@ export default function Box() {
   return (
     <div className="Box">
       <FamousCities />
-      <div class="input-group mb-3">
+      <div class="input-group mb-3 form">
         <input
           type="search"
           class="form-control"

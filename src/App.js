@@ -12,10 +12,8 @@ function App() {
   return (
     <Draggable>
       <div className="App">
-        <header className="App-header">
-          <h1 className="Header">Weather App!</h1>
-        </header>
         <Box />
+
         <footer>
           Coded by Anastasia Samsonova, open-sourced on{" "}
           <a
