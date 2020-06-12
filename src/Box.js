@@ -2,10 +2,10 @@ import React from "react";
 import Weather from "./Weather";
 import FamousCities from "./FamousCities";
 import Forecast from "./Forecast";
+import Emoji from "./Emoji";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Box.css";
-import Emoji from "./Emoji";
 
 export default function Box() {
   return (
@@ -28,7 +28,7 @@ export default function Box() {
             ...To the <Emoji icon="🌟🌟🌟" />
           </button>
         </div>
-      </div>{" "}
+      </div>
       <Weather />
       <Forecast />
     </div>

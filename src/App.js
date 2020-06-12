@@ -13,7 +13,7 @@ function App() {
     <Draggable>
       <div className="App">
         <header className="App-header">
-          <h1>Weather App!</h1>
+          <h1 className="Header">Weather App!</h1>
         </header>
         <Box />
         <footer>
