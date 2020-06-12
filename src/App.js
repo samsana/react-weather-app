@@ -6,7 +6,6 @@ import Box from "./Box";
 import "./App.css";
 
 function App() {
-  // eslint-disable-next-line
   let Draggable = require("react-draggable");
   // eslint-disable-next-line
   let DraggableCore = Draggable.DraggableCore;

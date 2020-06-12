@@ -1,6 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
-import Table from "./Table";
+import FamousCities from "./FamousCities";
 import Forecast from "./Forecast";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -10,7 +10,7 @@ import Emoji from "./Emoji";
 export default function Box() {
   return (
     <div className="Box">
-      <Table />
+      <FamousCities />
       <div class="input-group mb-3">
         <input
           type="search"
