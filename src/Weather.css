@@ -8,10 +8,20 @@ h1 {
   font-size: 50px;
 }
 
+.WeatherIcon {
+  font-size: 45px;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
+  left: 80px;
+  top: 30px;
 }
 
 img {
