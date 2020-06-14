@@ -1,14 +1,17 @@
 .Units {
   font-size: 15px;
   position: relative;
-  top: -20px;
+  top: -25px;
 }
 
 h1 {
   font-size: 50px;
   margin-left: 10px;
+  margin-top: 10px;
 }
-
+h6 {
+  margin-bottom: 15px;
+}
 .WeatherIcon {
   font-size: 45px;
   position: relative;
@@ -26,6 +29,5 @@ ul {
 img {
   max-width: 80px;
   position: relative;
-  top: 15px;
-  left: -40px;
+  left: -45px;
 }

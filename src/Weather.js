@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import Emoji from "./Emoji";
 import sun from "./img/sun.svg";
 
@@ -6,31 +7,61 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
 
 export default function Weather(props) {
-  return (
-    <div>
-      <h3>Frankfurt am Main, DE</h3>
-      <div className="row">
-        <div className="col-4">
-          <h6>
-            <Emoji icon="📡" /> Clear sky
-          </h6>
-          <div className="row">
-            <h1>
-              19
-              <span className="Units">
-                <a href="/">°C</a>|<a href="/">°F</a>{" "}
-              </span>
-            </h1>
+  const [weatherData, setWeatehrData] = useState({ loaded: false });
+
+  function handleResponse(response) {
+    setWeatehrData({
+      city: response.data.name,
+      country: response.data.sys.country,
+      temperature: response.data.main.temp,
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      loaded: true,
+    });
+  }
+
+  function getAxios() {
+    const Key = `559f875e04c47ab9cf859e8b46e9c445`;
+    let city = "Berlin";
+    let ApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Key}&units=metric`;
+    axios.get(ApiUrl).then(handleResponse);
+  }
+
+  if (weatherData.loaded) {
+    return (
+      <div className="Weather">
+        <h3>
+          {weatherData.city}, {weatherData.country}
+        </h3>
+        <h6>
+          <Emoji icon="📡" /> {weatherData.description}
+        </h6>
+        <div className="row">
+          <div className="col-4">
+            <div className="row">
+              <h1>
+                {Math.round(weatherData.temperature)}
+                <span className="Units">
+                  <a href="/">°C</a>|<a href="/">°F</a>{" "}
+                </span>
+              </h1>
+            </div>
+          </div>
+          <div className="col-3">
+            <img src={sun} alt="sun" />
+          </div>
+          <div className="col">
+            <ul>
+              <li>☞ Humidity: {weatherData.humidity}%</li>
+              <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
+            </ul>
           </div>
         </div>
-        <div className="col-3">
-          <img src={sun} alt="sun" />
-        </div>
-        <ul>
-          <li>☞ Humidity: 36%</li>
-          <li>☞ Wind: 5km/h</li>
-        </ul>
       </div>
-    </div>
-  );
+    );
+  } else {
+    getAxios();
+    return <p>Fetching data...</p>;
+  }
 }
