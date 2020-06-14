@@ -1,5 +1,4 @@
 import React from "react";
-import Emoji from "./Emoji";
 
 import "./Form.css";
 
@@ -12,8 +11,12 @@ export default function Form() {
         placeholder="Where to, Miss?"
       />
       <div className="input-group-append">
-        <button className="btn btn-outline-secondary" type="button">
-          ...To the <Emoji icon="🌟🌟🌟" />
+        <button
+          className="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          Search
         </button>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Weather from "./Weather";
-import FamousCities from "./FamousCities";
 import Forecast from "./Forecast";
 import Form from "./Form";
 
@@ -12,7 +11,6 @@ export default function Box() {
     <div>
       <Form />
       <div className="Box">
-        <FamousCities />
         <Weather />
         <Forecast />
       </div>

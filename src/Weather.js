@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Emoji from "./Emoji";
 import sun from "./img/sun.svg";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -31,31 +30,23 @@ export default function Weather(props) {
   if (weatherData.loaded) {
     return (
       <div className="Weather">
-        <div className="row">
-          <div className="col">
-            <h3>
-              {weatherData.city}, {weatherData.country}
-            </h3>
-            <h6>
-              <Emoji icon="📡" /> {weatherData.description}
-            </h6>
-            <ul>
-              <li>☞ Humidity: {weatherData.humidity}%</li>
-              <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
-            </ul>
-          </div>
-          <div className="col-6">
-            <div className="row">
-              <h1>
-                {Math.round(weatherData.temperature)}
-                <span className="Units">
-                  <a href="/">°C</a>|<a href="/">°F</a>{" "}
-                </span>
-              </h1>
-              <img src={sun} alt="sun" />
-            </div>
-          </div>
-        </div>
+        <h3>
+          {weatherData.city}, {weatherData.country}
+        </h3>
+        <h6>{weatherData.description}</h6>
+        <img src={sun} alt="sun" />
+
+        <h1>
+          {Math.round(weatherData.temperature)}
+          <span className="Units">
+            <a href="/">°C</a>|<a href="/">°F</a>{" "}
+            <span className="Details">DETAILS </span>
+          </span>
+        </h1>
+        <ul>
+          <li>☞ Humidity: {weatherData.humidity}%</li>
+          <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
+        </ul>
       </div>
     );
   } else {
