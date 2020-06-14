@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import sun from "./img/sun.svg";
+import brokenClouds from "./img/brokenClouds.svg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
@@ -34,7 +34,7 @@ export default function Weather(props) {
           {weatherData.city}, {weatherData.country}
         </h3>
         <h6>{weatherData.description}</h6>
-        <img src={sun} alt="sun" />
+        <img src={brokenClouds} alt={weatherData.description} />
 
         <h1>
           {Math.round(weatherData.temperature)}
