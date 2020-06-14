@@ -31,14 +31,20 @@ export default function Weather(props) {
   if (weatherData.loaded) {
     return (
       <div className="Weather">
-        <h3>
-          {weatherData.city}, {weatherData.country}
-        </h3>
-        <h6>
-          <Emoji icon="📡" /> {weatherData.description}
-        </h6>
         <div className="row">
-          <div className="col-4">
+          <div className="col">
+            <h3>
+              {weatherData.city}, {weatherData.country}
+            </h3>
+            <h6>
+              <Emoji icon="📡" /> {weatherData.description}
+            </h6>
+            <ul>
+              <li>☞ Humidity: {weatherData.humidity}%</li>
+              <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
+            </ul>
+          </div>
+          <div className="col-6">
             <div className="row">
               <h1>
                 {Math.round(weatherData.temperature)}
@@ -46,16 +52,8 @@ export default function Weather(props) {
                   <a href="/">°C</a>|<a href="/">°F</a>{" "}
                 </span>
               </h1>
+              <img src={sun} alt="sun" />
             </div>
-          </div>
-          <div className="col-3">
-            <img src={sun} alt="sun" />
-          </div>
-          <div className="col">
-            <ul>
-              <li>☞ Humidity: {weatherData.humidity}%</li>
-              <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
-            </ul>
           </div>
         </div>
       </div>

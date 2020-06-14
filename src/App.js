@@ -13,7 +13,6 @@ function App() {
     <Draggable>
       <div className="App">
         <Box />
-
         <footer>
           Coded by Anastasia Samsonova, open-sourced on{" "}
           <a

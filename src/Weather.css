@@ -6,8 +6,8 @@
 
 h1 {
   font-size: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: -10px;
+  margin-top: 15px;
 }
 h6 {
   margin-bottom: 15px;
@@ -29,5 +29,6 @@ ul {
 img {
   max-width: 80px;
   position: relative;
-  left: -45px;
+  left: 10px;
+  top: 5px;
 }
