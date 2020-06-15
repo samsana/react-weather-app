@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import brokenClouds from "./img/brokenClouds.svg";
+import DisplayDate from "./DisplayDate";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
@@ -16,6 +17,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      date: new Date(response.data.dt * 1000),
       loaded: true,
     });
   }
@@ -47,6 +49,11 @@ export default function Weather(props) {
           <li>☞ Humidity: {weatherData.humidity}%</li>
           <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
         </ul>
+
+        <p>
+          Last update:
+          <DisplayDate date={weatherData.date} />
+        </p>
       </div>
     );
   } else {
