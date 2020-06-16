@@ -42,7 +42,7 @@ export default function Weather(props) {
     return (
       <div>
         <small>
-          <DisplayDate date={weatherData.date} />
+          <DisplayDate />
         </small>
         <form onSubmit={handleSubnit} className="input-group mb-3 Form">
           <input

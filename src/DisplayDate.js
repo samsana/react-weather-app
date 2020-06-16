@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function DisplayDate(props) {
+export default function DisplayDate() {
+  let today = new Date();
   let days = [
     "Sunday",
     "Monday",
@@ -10,19 +11,19 @@ export default function DisplayDate(props) {
     "Friday",
     "Saturday",
   ];
-  let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
+  let day = days[today.getDay()];
+  let hours = today.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
 
-  let minutes = props.date.getMinutes();
+  let minutes = today.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   return (
     <div>
-      Last API call: {day}, {hours}:{minutes}
+      Last updated: {day}, {hours}:{minutes}
     </div>
   );
 }
