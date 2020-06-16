@@ -22,7 +22,7 @@ export default function DisplayDate(props) {
   }
   return (
     <div>
-      {day}, {hours}:{minutes}
+      Last API call: {day}, {hours}:{minutes}
     </div>
   );
 }

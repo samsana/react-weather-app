@@ -25,7 +25,7 @@ ul {
   list-style-type: none;
   font-weight: lighter;
   position: relative;
-  left: 180px;
+  left: 176px;
   top: -60px;
   font-size: 15px;
 }
@@ -46,9 +46,20 @@ h1 {
   left: 5px;
   top: 2px;
   border-bottom: 1px solid black;
-  padding-right: 40px;
+  padding-right: 45px;
 }
 p {
   font-weight: lighter;
   font-size: 13px;
+}
+
+.Weather {
+  border: 1px solid black;
+  max-width: 400px;
+  margin: 0;
+  padding: 15px 25px;
+}
+
+.Form {
+  max-width: 400px;
 }

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import brokenClouds from "./img/brokenClouds.svg";
 import DisplayDate from "./DisplayDate";
+import WeatherInfo from "./WeatherInfo";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
 
 export default function Weather(props) {
+  const [city, setCity] = useState("Berlin");
   const [weatherData, setWeatehrData] = useState({ loaded: false });
 
   function handleResponse(response) {
@@ -24,36 +25,45 @@ export default function Weather(props) {
 
   function getAxios() {
     const Key = `559f875e04c47ab9cf859e8b46e9c445`;
-    let city = "Berlin";
+
     let ApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Key}&units=metric`;
     axios.get(ApiUrl).then(handleResponse);
+  }
+  function handleSubnit(event) {
+    event.preventDefault();
+    getAxios();
+  }
+
+  function handleChange(event) {
+    setCity(event.target.value);
   }
 
   if (weatherData.loaded) {
     return (
-      <div className="Weather">
-        <h3>
-          {weatherData.city}, {weatherData.country}
-        </h3>
-        <h6>{weatherData.description}</h6>
-        <img src={brokenClouds} alt={weatherData.description} />
-
-        <h1>
-          {Math.round(weatherData.temperature)}
-          <span className="Units">
-            <a href="/">°C</a>|<a href="/">°F</a>{" "}
-            <span className="Details">DETAILS </span>
-          </span>
-        </h1>
-        <ul>
-          <li>☞ Humidity: {weatherData.humidity}%</li>
-          <li>☞ Wind: {Math.round(weatherData.wind)} km/h</li>
-        </ul>
-
-        <p>
-          Last update:
+      <div>
+        <small>
           <DisplayDate date={weatherData.date} />
-        </p>
+        </small>
+        <form onSubmit={handleSubnit} className="input-group mb-3 Form">
+          <input
+            onChange={handleChange}
+            type="search"
+            className="form-control"
+            placeholder="Where to, Miss?"
+          />
+          <div className="input-group-append">
+            <button
+              className="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+        <div className="Weather">
+          <WeatherInfo data={weatherData} />
+        </div>
       </div>
     );
   } else {
