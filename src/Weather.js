@@ -5,6 +5,7 @@ import WeatherInfo from "./WeatherInfo";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
+import Emoji from "./Emoji";
 
 export default function Weather(props) {
   const [city, setCity] = useState("Berlin");
@@ -58,7 +59,7 @@ export default function Weather(props) {
               type="button"
               id="button-addon2"
             >
-              Search
+              Search <Emoji icon="🌈" />
             </button>
           </div>
         </form>

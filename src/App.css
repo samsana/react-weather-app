@@ -1,12 +1,12 @@
-h1.Header {
+.App h1.Header {
   text-align: center;
 }
 
-footer {
+.App footer {
   text-align: left;
   font-size: 12px;
 }
 
 div.App {
-  margin: 20px;
+  margin: 20px 30px;
 }

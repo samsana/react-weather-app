@@ -1,36 +1,56 @@
-.Units {
-  font-size: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@600&family=MuseoModerno:wght@300&display=swap");
+
+.Weather {
+  border: 1px solid #6c767d;
+  max-width: 400px;
+  padding: 15px 25px;
+  margin-bottom: 10px;
+}
+
+.Weather .Units {
+  font-size: 17px;
   position: relative;
   top: -45px;
+  right: 5px;
 }
-.Details {
+
+.Weather .Details {
   font-size: 19px;
+  color: #b240ff;
 }
-h3,
+
+.Weather h3,
 h6,
 h1 {
   text-align: center;
+  font-family: "MuseoModerno", cursive;
 }
 
-.WeatherIcon {
+.Weather h3 {
+  margin-top: 10px;
+}
+
+.Weather h6 {
+  color: #b240ff;
+}
+
+.Weather .WeatherIcon {
   font-size: 45px;
   position: relative;
   top: 15px;
   left: 10px;
 }
 
-ul {
-  margin: 0;
+.Weather ul {
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
   font-weight: lighter;
-  position: relative;
-  left: 176px;
-  top: -60px;
   font-size: 15px;
+  font-family: "MuseoModerno", cursive;
 }
 
-img {
+.Weather img {
   display: block;
   margin: 0 auto;
   max-width: 200px;
@@ -38,29 +58,16 @@ img {
   margin-top: 25px;
 }
 
-h1 {
+.Weather h1 {
   font-size: 70px;
   font-weight: lighter;
-}
-.Details {
   position: relative;
-  left: 5px;
-  top: 2px;
-  border-bottom: 1px solid black;
-  padding-right: 45px;
-}
-p {
-  font-weight: lighter;
-  font-size: 13px;
-}
-
-.Weather {
-  border: 1px solid #6c767d;
-  max-width: 400px;
-  margin: 0;
-  padding: 15px 25px;
+  right: -70px;
+  top: -1px;
 }
 
 .Form {
   max-width: 400px;
+  font-family: "MuseoModerno", cursive;
+  margin-top: 10px;
 }
