@@ -12,15 +12,13 @@ function App() {
   // eslint-disable-next-line
   let DraggableCore = Draggable.DraggableCore;
   return (
-    <Draggable>
-      <div className="App">
-        <div className="Box">
-          <Weather />
-          <Forecast />
-        </div>
-        <Footer />
+    <div className="App">
+      <div className="Box">
+        <Weather />
+        <Forecast />
       </div>
-    </Draggable>
+      <Footer />
+    </div>
   );
 }
 

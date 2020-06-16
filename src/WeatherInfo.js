@@ -1,5 +1,5 @@
 import React from "react";
-import brokenClouds from "./img/brokenClouds.svg";
+import Icon from "./Icon";
 
 export default function WeatherInfo(props) {
   return (
@@ -8,7 +8,7 @@ export default function WeatherInfo(props) {
         {props.data.city}, {props.data.country}
       </h3>
       <h6>{props.data.description}</h6>
-      <img src={brokenClouds} alt={props.data.description} />
+      <Icon code={props.data.icon} alt={props.data.description} />
       <h1>
         {Math.round(props.data.temperature)}
         <span className="Units">

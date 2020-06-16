@@ -34,7 +34,8 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 200px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 h1 {
@@ -54,7 +55,7 @@ p {
 }
 
 .Weather {
-  border: 1px solid black;
+  border: 1px solid #6c767d;
   max-width: 400px;
   margin: 0;
   padding: 15px 25px;
