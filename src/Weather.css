@@ -7,13 +7,6 @@
   margin-bottom: 10px;
 }
 
-.Weather .Units {
-  font-size: 17px;
-  position: relative;
-  top: -45px;
-  right: 5px;
-}
-
 .Weather .Details {
   font-size: 19px;
   color: #b240ff;
@@ -41,15 +34,6 @@ h1 {
   left: 10px;
 }
 
-.Weather ul {
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
-  font-weight: lighter;
-  font-size: 15px;
-  font-family: "MuseoModerno", cursive;
-}
-
 .Weather img {
   display: block;
   margin: 0 auto;
@@ -58,12 +42,29 @@ h1 {
   margin-top: 25px;
 }
 
+.Weather .Units {
+  font-size: 17px;
+  position: fixed;
+  right: 493px;
+  top: 444px;
+}
+
 .Weather h1 {
   font-size: 70px;
   font-weight: lighter;
   position: relative;
-  right: -70px;
-  top: -1px;
+  left: 12px;
+}
+
+.Weather ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  font-weight: lighter;
+  font-size: 15px;
+  font-family: "MuseoModerno", cursive;
+  position: relative;
+  right: 15px;
 }
 
 .Form {
