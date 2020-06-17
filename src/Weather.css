@@ -37,7 +37,7 @@ h1 {
 .Weather .Units {
   font-size: 15px;
   position: absolute;
-  left: 70px;
+  left: 73px;
 }
 
 .Weather h1 {
@@ -45,7 +45,7 @@ h1 {
   font-weight: lighter;
   position: absolute;
   left: 80px;
-  padding-right: 60px;
+  padding-right: 40px;
 }
 
 .Weather ul {
@@ -55,9 +55,9 @@ h1 {
   font-weight: lighter;
   font-size: 15px;
   font-family: "MuseoModerno", cursive;
-  position: relative;
-  right: 15px;
-  bottom: 5px;
+  position: absolute;
+  right: 65px;
+  top: -5px;
 }
 
 .Form {
