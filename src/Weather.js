@@ -6,6 +6,7 @@ import WeatherInfo from "./WeatherInfo";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
 import Emoji from "./Emoji";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [city, setCity] = useState("Berlin");
@@ -65,6 +66,7 @@ export default function Weather(props) {
         </form>
         <div className="Weather">
           <WeatherInfo data={weatherData} />
+          <Forecast city={weatherData.city} />
         </div>
       </div>
     );

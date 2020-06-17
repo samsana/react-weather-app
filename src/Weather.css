@@ -4,6 +4,7 @@
   border: 1px solid #6c767d;
   max-width: 400px;
   padding: 15px 25px;
+  padding-bottom: 0px;
   margin-bottom: 10px;
 }
 
@@ -27,33 +28,25 @@ h1 {
   color: #b240ff;
 }
 
-.Weather .WeatherIcon {
-  font-size: 45px;
-  position: relative;
-  top: 15px;
-  left: 10px;
-}
-
 .Weather img {
   display: block;
   margin: 0 auto;
   max-width: 200px;
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 .Weather .Units {
   font-size: 17px;
-  position: fixed;
-  right: 493px;
-  top: 444px;
+  position: relative;
+  top: -45px;
 }
 
 .Weather h1 {
   font-size: 70px;
   font-weight: lighter;
   position: relative;
-  left: 12px;
+  left: 25px;
 }
 
 .Weather ul {
