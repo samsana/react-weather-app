@@ -4,8 +4,6 @@
   border: 1px solid #6c767d;
   max-width: 400px;
   padding: 15px 25px;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
 }
 
 .Weather .Details {
@@ -26,14 +24,14 @@ h1 {
 
 .Weather h6 {
   color: #b240ff;
+  margin-bottom: 30px;
 }
 
 .Weather img {
   display: block;
   margin: 0 auto;
   max-width: 200px;
-  margin-bottom: 25px;
-  margin-top: 18px;
+  margin-bottom: 35px;
 }
 
 .Weather .Units {

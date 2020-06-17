@@ -1,11 +1,11 @@
 .Forecast {
   font-family: "MuseoModerno", cursive;
-  margin-top: 15px;
   margin-bottom: 0px;
   margin-left: -25px;
   margin-right: -25px;
   padding: 10px;
   color: #687a92;
+  font-size: 18px;
 }
 
 .ForecastElement {
@@ -13,10 +13,17 @@
   margin: 0px auto;
 }
 
-.ForecastIcon {
-  max-width: 38px;
-}
-
 .ForecastTemp {
   color: #05284a;
+  font-size: 15px;
+}
+
+.ForecastIcon {
+  max-width: 20px;
+}
+
+h6.ForecastTitel {
+  margin-bottom: 0px;
+  margin-top: 15px;
+  text-decoration: underline;
 }

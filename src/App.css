@@ -10,3 +10,8 @@
 div.App {
   margin: 20px 30px;
 }
+
+footer {
+  max-width: 400px;
+  margin-top: 5px;
+}
