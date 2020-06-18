@@ -37,15 +37,14 @@ h1 {
 .Weather .Units {
   font-size: 15px;
   position: absolute;
-  left: 73px;
+  top: 0;
+  right: 10px;
 }
 
 .Weather h1 {
   font-size: 70px;
   font-weight: lighter;
-  position: absolute;
-  left: 80px;
-  padding-right: 40px;
+  position: relative;
 }
 
 .Weather ul {
