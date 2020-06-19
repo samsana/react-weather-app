@@ -6,6 +6,7 @@
   padding: 10px;
   color: #687a92;
   font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .ForecastElement {
@@ -26,4 +27,6 @@ h6.ForecastTitel {
   margin-bottom: 0px;
   margin-top: 30px;
   text-decoration: underline;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }

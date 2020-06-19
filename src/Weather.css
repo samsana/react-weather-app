@@ -11,6 +11,7 @@
 .Weather .Details {
   font-size: 19px;
   color: #b240ff;
+  letter-spacing: 1px;
 }
 
 .Weather h3,
@@ -22,11 +23,13 @@ h1 {
 
 .Weather h3 {
   margin-top: 10px;
+  letter-spacing: 2px;
 }
 
 .Weather h6 {
   color: #b240ff;
   margin-bottom: 30px;
+  letter-spacing: 3px;
 }
 
 .Weather img {
@@ -47,6 +50,7 @@ h1 {
   font-size: 70px;
   font-weight: lighter;
   position: relative;
+  letter-spacing: 1px;
 }
 
 .Weather ul {
@@ -59,10 +63,19 @@ h1 {
   position: relative;
   right: 15px;
   top: -5px;
+  letter-spacing: 1px;
 }
 
 .Form {
   max-width: 400px;
   font-family: "MuseoModerno", cursive;
   margin-top: 10px;
+}
+
+input {
+  letter-spacing: 1px;
+}
+
+button {
+  letter-spacing: 1px;
 }
