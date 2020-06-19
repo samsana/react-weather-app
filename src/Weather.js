@@ -53,13 +53,10 @@ export default function Weather(props) {
             type="search"
             className="form-control"
             placeholder="Where to, Miss?"
+            autoFocus="on"
           />
           <div className="input-group-append">
-            <button
-              className="btn btn-outline-secondary"
-              type="button"
-              id="button-addon2"
-            >
+            <button className="btn btn-outline-secondary" type="submit">
               Search <Emoji icon="🌈" />
             </button>
           </div>
