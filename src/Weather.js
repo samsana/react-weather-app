@@ -57,7 +57,7 @@ export default function Weather(props) {
           />
           <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="submit">
-              Search <Emoji icon="🌈" />
+              ...To the stars <Emoji icon="" />
             </button>
           </div>
         </form>

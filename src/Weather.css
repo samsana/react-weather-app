@@ -12,6 +12,7 @@
   font-size: 19px;
   color: #b240ff;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .Weather h3,
@@ -24,12 +25,16 @@ h1 {
 .Weather h3 {
   margin-top: 10px;
   letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .Weather h6 {
   color: #b240ff;
   margin-bottom: 30px;
   letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .Weather img {
@@ -42,15 +47,16 @@ h1 {
 .Weather .Units {
   font-size: 15px;
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 10px;
+  font-weight: bold;
 }
 
 .Weather h1 {
   font-size: 70px;
-  font-weight: lighter;
   position: relative;
   letter-spacing: 1px;
+  top: -2px;
 }
 
 .Weather ul {
@@ -62,8 +68,9 @@ h1 {
   font-family: "MuseoModerno", cursive;
   position: relative;
   right: 15px;
-  top: -5px;
+  top: -3px;
   letter-spacing: 0.3px;
+  line-height: 25px;
 }
 
 .Form {
@@ -77,5 +84,5 @@ input {
 }
 
 button {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }

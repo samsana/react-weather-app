@@ -17,7 +17,7 @@ export default function Forecast(props) {
   if (loaded && props.city === forecast.city.name) {
     return (
       <div>
-        <h6 className="ForecastTitel">Brace yourself:</h6>
+        <h6 className="ForecastTitel">What to expect:</h6>
         <div className="row Forecast">
           <ForecastElement data={forecast.list[0]} />
           <ForecastElement data={forecast.list[1]} />
