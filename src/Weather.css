@@ -45,16 +45,18 @@ h1 {
 }
 
 .Weather .Units {
-  font-size: 15px;
-  position: relative;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 10px;
   font-weight: bold;
-  bottom: 48px;
 }
 
 .Weather h1 {
   font-size: 70px;
   position: relative;
   letter-spacing: 1px;
+  top: -1px;
 }
 
 .Weather ul {
@@ -68,7 +70,7 @@ h1 {
   right: 15px;
   letter-spacing: 0.3px;
   line-height: 25px;
-  top: -2px;
+  top: -3px;
 }
 
 .Form {
