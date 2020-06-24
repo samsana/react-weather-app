@@ -5,7 +5,6 @@ import WeatherInfo from "./WeatherInfo";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
-import Emoji from "./Emoji";
 import Forecast from "./Forecast";
 
 export default function Weather(props) {
@@ -57,7 +56,7 @@ export default function Weather(props) {
           />
           <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="submit">
-              ...To the stars <Emoji icon="" />
+              ...To the stars
             </button>
           </div>
         </form>

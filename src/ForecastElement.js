@@ -12,8 +12,7 @@ export default function ForecastElement(props) {
 
   return (
     <div className="ForecastElement">
-      {time()}
-      <br />
+      <div>{time()}</div>
       <div className="ForecastTemp">{Math.round(props.data.main.temp)}°C</div>
     </div>
   );

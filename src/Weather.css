@@ -6,6 +6,7 @@
   padding: 15px 25px;
   box-shadow: 4px 3px 10px #6c767d;
   border-radius: 4px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .Weather .Details {
@@ -47,9 +48,9 @@ h1 {
 .Weather .Units {
   font-size: 16px;
   position: absolute;
-  top: 0;
   right: 10px;
   font-weight: bold;
+  top: 0px;
 }
 
 .Weather h1 {
@@ -77,6 +78,7 @@ h1 {
   max-width: 400px;
   font-family: "MuseoModerno", cursive;
   margin-top: 10px;
+  border-radius: 4px;
 }
 
 input {
