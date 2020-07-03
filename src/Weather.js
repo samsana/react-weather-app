@@ -51,12 +51,12 @@ export default function Weather(props) {
             onChange={handleChange}
             type="search"
             className="form-control"
-            placeholder="Where to, Miss?"
+            placeholder="Type in a city"
             autoFocus="on"
           />
           <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="submit">
-              ...To the stars
+              Search
             </button>
           </div>
         </form>

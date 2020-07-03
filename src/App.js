@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
+import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
 function App() {

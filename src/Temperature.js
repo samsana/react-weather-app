@@ -29,10 +29,10 @@ export default function Temperature(props) {
       <h1>
         {Math.round((props.celsius * 9) / 5 + 32)}
         <span className="Units">
+          °F|
           <a onClick={displayCelsius} href="/">
             °C
           </a>
-          |°F
         </span>
       </h1>
     );

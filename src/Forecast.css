@@ -1,5 +1,4 @@
 .Forecast {
-  font-family: "MuseoModerno", cursive;
   margin-bottom: 0px;
   margin-left: -25px;
   margin-right: -25px;
@@ -11,17 +10,20 @@
 .ForecastElement {
   display: block;
   margin: 0 auto;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #6c767d;
 }
 
 .ForecastTemp {
   font-size: 17px;
-  color: #687a92;
+  font-weight: bolder;
 }
 
 h6.ForecastTitel {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 30px;
   letter-spacing: 1px;
   word-spacing: 3px;
-  font-weight: bold;
+  font-weight: bolder;
 }
